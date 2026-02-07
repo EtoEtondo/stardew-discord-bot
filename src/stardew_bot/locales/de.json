@@ -1,0 +1,26 @@
+{
+  "bot.about": "Stardew Helper ist ein Open-Source Stardew Valley Begleit-Bot. Keine Verbindung zu oder Unterstützung durch ConcernedApe.",
+  "help.description": "Verfügbare Befehle",
+  "help.footer": "Mitmachen oder Issues melden: {repo}",
+  "wiki.result": "Wiki-Link für \"{term}\": {url}",
+  "tooling.list": "Nützliche Stardew Valley Tools:",
+  "funfact.title": "Fun Fact",
+  "funfact.entries": [
+    "Du kannst Bäume außerhalb deiner Farm pflanzen, um Pelican Town zu verschönern.",
+    "Junimos ernten an Regentagen nicht, außer du lässt sie manuell sammeln.",
+    "Du kannst eine Kiste neben die Versandkiste stellen, um Items schnell zu verkaufen.",
+    "Der Reisewagen erscheint freitags und sonntags im Cindersap Wald."
+  ],
+  "quiz.placeholder": "Quiz kommt bald. Bleib dran!",
+  "update.message": "✅ Aktualisiert auf {version}",
+  "npc.response": "NPC-Infos für {name}: {url}",
+  "crop.response": "Feldfrucht-Infos für {name}: {url}",
+  "fish.response": "Fisch-Infos für {name}: {url}",
+  "tooling.entries": [
+    "Offizielles Wiki: https://stardewvalleywiki.com",
+    "Interaktiver Planer: https://stardew.info/planner/",
+    "Feldfrucht-Planer: https://stardew.info/crop/",
+    "Farm-Speicherstand prüfen: https://upload.farm/"
+  ],
+  "error.empty_term": "Bitte gib einen Namen oder Suchbegriff an."
+}

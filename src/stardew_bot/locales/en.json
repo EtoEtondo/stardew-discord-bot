@@ -1,0 +1,26 @@
+{
+  "bot.about": "Stardew Helper is an open-source Stardew Valley companion bot. Not affiliated with or endorsed by ConcernedApe.",
+  "help.description": "Available commands",
+  "help.footer": "Contribute or report issues: {repo}",
+  "wiki.result": "Wiki link for \"{term}\": {url}",
+  "tooling.list": "Here are some helpful Stardew Valley tools:",
+  "funfact.title": "Fun fact",
+  "funfact.entries": [
+    "You can plant trees outside your farm to beautify Pelican Town.",
+    "Junimos will not harvest crops on rainy days unless you have them collect manually.",
+    "You can put a chest next to a shipping bin to quickly dump items for sale.",
+    "The Traveling Cart appears in Cindersap Forest on Fridays and Sundays."
+  ],
+  "quiz.placeholder": "Quiz is coming soon. Stay tuned!",
+  "update.message": "✅ Updated to {version}",
+  "npc.response": "NPC info for {name}: {url}",
+  "crop.response": "Crop info for {name}: {url}",
+  "fish.response": "Fish info for {name}: {url}",
+  "tooling.entries": [
+    "Official wiki: https://stardewvalleywiki.com",
+    "Interactive planner: https://stardew.info/planner/",
+    "Crop planner: https://stardew.info/crop/",
+    "Check your farm save: https://upload.farm/"
+  ],
+  "error.empty_term": "Please provide a name or term to look up."
+}

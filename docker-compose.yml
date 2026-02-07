@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  bot:
+    image: ${IMAGE:-ghcr.io/${GHCR_OWNER:-etondo}/stardew-discord-bot:latest}
+    build:
+      context: .
+    env_file:
+      - .env
+    environment:
+      - DEPLOY_VERSION=${DEPLOY_VERSION:-}
+    restart: unless-stopped
