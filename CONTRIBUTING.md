@@ -4,7 +4,7 @@ Thanks for your interest in contributing! This project is experimental and commu
 
 ## Ways to contribute
 - Report bugs or suggest features via Issues.
-- Improve docs (README, deployment, i18n, marketing notes).
+- Improve docs (README, deployment).
 - Add commands, locales, tests, tooling.
 - Triage discussions and help others.
 

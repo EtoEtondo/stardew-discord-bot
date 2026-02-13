@@ -3,10 +3,10 @@
 Goal: trustworthy, minimal-permissions, open-source bot that feels alive.
 
 ## Phase 1: Foundation
-- [ ] Public repo with good README (badges, disclaimer “not affiliated with ConcernedApe”).
+- [x] Public repo with good README (disclaimer “not affiliated with ConcernedApe”).
 - [ ] CI badges visible; license + Python version noted.
-- [ ] Minimal permissions + no message content intent documented.
-- [ ] Roadmap + WIP status mentioned.
+- [x] Minimal permissions + no message content intent documented.
+- [x] Roadmap + WIP status mentioned.
 
 ## Phase 2: Visibility (after MVP is stable)
 - [ ] Prepare bot profile (avatar, short tagline, invite link).
@@ -26,6 +26,6 @@ Goal: trustworthy, minimal-permissions, open-source bot that feels alive.
 - [ ] Opt-in prompts in /help to star the repo.
 
 ## Phase 5: Long-term
-- [ ] GitHub Pages or lightweight site.
+- [x] GitHub Pages or lightweight site (see `public/`).
 - [ ] Devlogs/changelogs shared on releases.
 - [ ] Additional locales and content partnerships (with clear licensing).

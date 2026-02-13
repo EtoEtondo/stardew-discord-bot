@@ -1,7 +1,7 @@
 [project]
 name = "stardew-discord-bot"
 version = "0.1.0"
-description = "Stardew Helper – a Discord bot for Stardew Valley (slash commands, wiki links, fun facts)."
+description = "Stardew Helper – a Discord bot for Stardew Valley."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }

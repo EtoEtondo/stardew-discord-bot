@@ -2,12 +2,17 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master, develop]
   pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   quality:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,8 +36,33 @@ jobs:
   docker_build_check:
     runs-on: ubuntu-latest
     needs: quality
+    permissions:
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build Docker image
         run: docker build -t stardew-helper-ci .
+
+  push_test_image:
+    name: Push test image (:test)
+    runs-on: ubuntu-latest
+    needs: docker_build_check
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
+    permissions:
+      contents: read
+      packages: write
+    env:
+      IMAGE_NAME: stardew-discord-bot
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Login to GHCR
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
+      - name: Build and push :test image
+        env:
+          OWNER_LOWER: "${{ github.repository_owner }}"
+        run: |
+          IMAGE="ghcr.io/${OWNER_LOWER,,}/${IMAGE_NAME}"
+          docker build -t "${IMAGE}:test" .
+          docker push "${IMAGE}:test"

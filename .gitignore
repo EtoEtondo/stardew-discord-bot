@@ -22,3 +22,5 @@ build/
 # Docker
 .docker-cache
 
+# Runtime state
+.state/

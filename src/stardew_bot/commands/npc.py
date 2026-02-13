@@ -44,7 +44,7 @@ class NPCCog(commands.Cog):
         url = wiki_service.build_npc_url(name, locale=locale)
         description = self.translator.translate("npc.response", locale=locale, name=name, url=url)
         embed = discord.Embed(
-            title=f"🧺 {name.title()}",
+            title=f"🧙 {name.title()}",
             description=description,
             url=url,
             color=discord.Color.gold(),

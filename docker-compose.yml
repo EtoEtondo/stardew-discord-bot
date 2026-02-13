@@ -9,4 +9,6 @@ services:
       - .env
     environment:
       - DEPLOY_VERSION=${DEPLOY_VERSION:-}
+    volumes:
+      - ./.state:/app/.state
     restart: unless-stopped

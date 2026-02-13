@@ -37,7 +37,12 @@ class ToolingCog(commands.Cog):
         header = self.translator.translate("tooling.list", locale=locale)
         entries = self.translator.translate("tooling.entries", locale=locale)
         if isinstance(entries, list):
-            body = "\n".join(f"- {item}" for item in entries)
+            body = "\n".join(f"• {item}" for item in entries)
         else:
             body = str(entries)
-        await interaction.response.send_message(f"{header}\n{body}")
+        embed = discord.Embed(
+            title="🧰 Stardew tooling",
+            description=f"{header}\n{body}",
+            color=discord.Color.blurple(),
+        )
+        await interaction.response.send_message(embed=embed)

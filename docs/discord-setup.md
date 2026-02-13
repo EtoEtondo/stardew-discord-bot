@@ -5,13 +5,13 @@ How to create and configure the Stardew Helper bot in the Discord Developer Port
 ## 1) Create application
 - Go to https://discord.com/developers/applications
 - New Application → name it “Stardew Helper” (or your variant) → create.
-- Branding: add avatar (e.g., green Junimo-like blob), optional banner/description.
+- Branding: add avatar, optional banner/description.
 - Public? Yes (for invites). No need for message content intent.
 
 ## 2) Create Bot user
 - In the left navigation: *Bot* → *Add Bot*.
 - Copy the Bot Token (store in `.env` and GitHub Secrets, never commit).
-- Privileged Intents: leave Message Content disabled. No presence/member intents needed for MVP.
+- Privileged Intents: leave Message Content disabled.
 
 ## 3) Permissions
 - Scopes: `applications.commands`, `bot`

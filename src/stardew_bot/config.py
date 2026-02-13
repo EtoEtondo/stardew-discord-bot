@@ -17,6 +17,9 @@ class Settings(BaseSettings):
     default_locale: str = Field(default="en", validation_alias="DEFAULT_LOCALE")
     log_level: str = Field(default="INFO", validation_alias="LOG_LEVEL")
     deploy_version: str | None = Field(default=None, validation_alias="DEPLOY_VERSION")
+    deploy_marker_path: str = Field(
+        default=".state/last_deploy_version.txt", validation_alias="DEPLOY_MARKER_PATH"
+    )
 
     @field_validator("default_locale")
     @classmethod

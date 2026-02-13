@@ -1,6 +1,6 @@
 # Oracle Cloud (Always Free) Setup
 
-This guide assumes you already have an Oracle Cloud account and will deploy Stardew Helper on an Always Free VM (Ampere A1).
+This guide assumes you already have an Oracle Cloud account and will deploy Stardew Helper on an Always Free VM (Ampere A1). Repo default branch: `master`.
 
 ## 1) Create the VM
 - Choose **Ampere A1** (ARM) with the Always Free shape.
@@ -34,7 +34,7 @@ sudo chown $USER:$USER /opt/stardew-bot
 cd /opt/stardew-bot
 ```
 
-Place these files (synced from the repo or copied manually):
+Place these files (synced from the repo or copied manually, branch `master`):
 - `docker-compose.yml`
 - `.env` (never commit this; fill with Discord token, logging, locale, etc.)
 

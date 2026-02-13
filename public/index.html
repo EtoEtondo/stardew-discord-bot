@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stardew Helper Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <header>
+      <div class="logo" aria-hidden="true">SH</div>
+      <div class="title">
+        <h1>Stardew Helper</h1>
+        <p class="lead">A cozy Discord bot for Stardew Valley fans. Quick wiki links, friendly slash commands, and zero clutter.</p>
+        <div class="actions">
+          <a class="button" data-href="invite">Invite to your server</a>
+          <a class="button secondary" data-href="repo">View on GitHub</a>
+          <a class="button secondary" data-href="setup">Setup guide</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>What it does</h2>
+      <ul class="features">
+        <li>Instant `/wiki` links to the official Stardew Valley wiki (English & German).</li>
+        <li>Shortcuts for crops, fish, NPCs, and handy planning tools.</li>
+        <li>Optional update pings so your server knows when the bot changed.</li>
+        <li>Privacy-friendly: no message content intent; uses slash commands only.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Commands</h2>
+      <table>
+        <thead>
+          <tr><th>Command</th><th>What it does</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="command">/wiki &lt;term&gt; [lang]</td><td>Sends an official Stardew Valley wiki link with a tidy embed.</td><td>English & German; cleans up the term.</td></tr>
+          <tr><td class="command">/crop</td><td>Shortcut to crop wiki entries.</td><td>Locale-aware links.</td></tr>
+          <tr><td class="command">/fish</td><td>Shortcut to fish wiki entries.</td><td>Locale-aware links.</td></tr>
+          <tr><td class="command">/npc</td><td>Shortcut to NPC wiki entries.</td><td>Locale-aware links.</td></tr>
+          <tr><td class="command">/tooling</td><td>Lists helpful planning tools.</td><td>Curated external links only.</td></tr>
+          <tr><td class="command">/funfact</td><td>Shows a cozy random fact.</td><td>Lighthearted filler.</td></tr>
+          <tr><td class="command">/quiz</td><td>Placeholder for the upcoming quiz mode.</td><td>Coming soon.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <p class="note">Replace the invite URL placeholder with your bot client ID before publishing.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

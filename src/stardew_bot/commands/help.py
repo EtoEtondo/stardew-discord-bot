@@ -40,7 +40,7 @@ class HelpCog(commands.Cog):
             locale=locale,
             repo="https://github.com/EtoEtondo/stardew-discord-bot",
         )
-        commands_line = "/wiki, /tooling, /funfact, /quiz, /npc, /crop, /fish"
+        commands_line = "📖 /wiki, 🧰 /tooling, 🧙 /npc, 🌾 /crop, 🐟 /fish"
         embed = discord.Embed(
             title="🌱 Stardew Helper",
             description=f"{about}\n\nCommands: {commands_line}",
