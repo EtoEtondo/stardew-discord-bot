@@ -79,6 +79,7 @@ exclude = ["tests/fixtures"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+pythonpath = ["src"]
 
 [tool.hatch.build]
 include = ["src/stardew_bot/locales/*.json"]

@@ -22,5 +22,14 @@ Other traits:
 - Experimental and looking for feedback.
 - Roadmap: polish wiki shortcuts, ship the quiz flow, add more locales.
 
+## Branches
+- Default branch: `master`; open PRs against it.
+- `develop` publishes the `:test` container image for pre-release testing.
+
+## Notes
+- Fun fact and quiz cogs are planned but currently disabled to keep the MVP quiet; enable them when ready.
+- The ⭐ reaction on `/wiki` responses can be toggled via `ENABLE_REACTION_FEEDBACK=false` if servers prefer fewer reactions.
+- Avoid forgetting formatting: link the helper hook once with `ln -s ../../scripts/git-pre-commit.sh .git/hooks/pre-commit`.
+
 ## License
 MIT. Not affiliated with or endorsed by ConcernedApe. Attribution rules and data notes are in `docs/data-licensing.md`.
