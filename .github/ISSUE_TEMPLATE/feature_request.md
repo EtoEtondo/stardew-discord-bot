@@ -1,21 +1,28 @@
-# Feature request
+---
+name: Feature request
+about: Suggest an idea for this project
+title: ''
+labels: ''
+assignees: ''
 
-## Summary
+---
+
+** Summary **
 
 Briefly describe the feature or improvement you want.
 
-## Use case / user story
+** Use case / user story **
 
 Who benefits and how?
 
-## Proposed solution
+** Proposed solution **
 
 What should the bot do? Any examples of commands or responses?
 
-## Alternatives considered
+** Alternatives considered **
 
 Other approaches you thought about.
 
-## Additional context
+** Additional context **
 
 Links, references, screenshots, or mockups.
