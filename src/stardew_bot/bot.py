@@ -28,7 +28,7 @@ class StardewBot(commands.Bot):
         # Slash-command-only bot: message content intent stays off to keep privacy-friendly.
         intents = discord.Intents.default()
         intents.message_content = False
-        super().__init__(command_prefix="!", intents=intents)
+        super().__init__(command_prefix=commands.when_mentioned, intents=intents, help_command=None)
         self.settings = settings
         self.translator = translator
         # Posts a one-time deploy notice when DEPLOY_VERSION + UPDATE_CHANNEL_ID are set.
@@ -54,10 +54,11 @@ class StardewBot(commands.Bot):
     async def _sync_tree(self) -> None:
         target_guild: discord.Object | None = None
         if self.settings.guild_id:
-            # Fast dev loop: sync to a single guild if GUILD_ID is set, then global sync.
+            # Fast dev loop: sync to a single guild if GUILD_ID is set.
             target_guild = discord.Object(id=self.settings.guild_id)
             await self.tree.sync(guild=target_guild)
             LOGGER.info("Synced commands to guild %s", self.settings.guild_id)
+            return
         await self.tree.sync(guild=None)
         LOGGER.info("Synced global commands")
 

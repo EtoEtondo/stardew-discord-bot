@@ -23,7 +23,7 @@ Practical setup notes for running and testing Stardew Helper on your own Discord
    ```bash
    uv run stardew-bot
    ```
-4) Command sync speed-up: set `GUILD_ID` to a single server ID while you iterate. Commands register instantly in that guild and still sync globally afterward; remove it when you want a wide rollout.
+4) Command sync speed-up: set `GUILD_ID` to a single server ID while you iterate. Commands register instantly only in that guild; remove it when you want a global rollout.
 
 ## Tests and linting
 ```bash

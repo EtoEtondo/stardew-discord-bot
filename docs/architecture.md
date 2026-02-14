@@ -18,7 +18,7 @@ Short map of where things live and what they do.
 - `stardew_bot/bot.py`: bot client, loads cogs, syncs commands (global + optional guild for faster dev).
 - `stardew_bot/config.py`: env settings via `pydantic-settings`.
 - `stardew_bot/i18n.py` + `locales/`: translations (JSON per locale).
-- `stardew_bot/commands/`: slash command cogs (`wiki`, `tooling`, `funfact`, `quiz` placeholder, `npc`, `crop`, `fish`).
+- `stardew_bot/commands/`: slash command cogs (`wiki`, `tooling`, `npc`, `crop`, `fish`; `funfact` + `quiz` are placeholders and stay unloaded by default).
 - `stardew_bot/services/`: helpers (wiki URL builder, update notifier; future stubs for news/social/steam).
 - `stardew_bot/__main__.py`: entrypoint for `uv run stardew-bot`.
 

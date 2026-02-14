@@ -20,6 +20,9 @@ class Settings(BaseSettings):
     deploy_marker_path: str = Field(
         default=".state/last_deploy_version.txt", validation_alias="DEPLOY_MARKER_PATH"
     )
+    enable_reaction_feedback: bool = Field(
+        default=True, validation_alias="ENABLE_REACTION_FEEDBACK"
+    )
 
     @field_validator("default_locale")
     @classmethod

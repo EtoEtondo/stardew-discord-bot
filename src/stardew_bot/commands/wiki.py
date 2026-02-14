@@ -17,6 +17,7 @@ class WikiCog(commands.Cog):
     def __init__(self, bot: StardewBot, translator: Translator) -> None:
         self.bot = bot
         self.translator = translator
+        self.reactions_enabled = bot.settings.enable_reaction_feedback
 
     def _locale(self, interaction: discord.Interaction, override: str | None = None) -> str:
         """Resolve locale from interaction or override."""
@@ -55,8 +56,9 @@ class WikiCog(commands.Cog):
             color=discord.Color.green(),
         )
         await interaction.response.send_message(embed=embed)
-        response_message = await interaction.original_response()
-        await self._add_reaction(response_message)
+        if self.reactions_enabled:
+            response_message = await interaction.original_response()
+            await self._add_reaction(response_message)
 
     @staticmethod
     async def _add_reaction(message: discord.Message) -> None:
